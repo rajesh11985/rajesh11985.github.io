@@ -14,6 +14,7 @@
     <a class="logo" href="index.html">OwnlyAI</a>
     <nav>
       <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
       <a href="support.html">Support</a>
     </nav>
   </div>
@@ -21,56 +22,87 @@
 
 <main class="wrap doc">
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated 16 September 2026</p>
+  <p class="updated">Last updated 18 September 2026</p>
 
   <h2>The short version</h2>
   <p>
-    OwnlyAI keeps your content on your phone. Your chats, recordings, study
-    material and budget entries are stored on the device, encrypted, and
-    are not uploaded to us or to anyone else. We do not have a copy. We
-    cannot read them.
+    OwnlyAI keeps your content on your phone. Your chats, recordings,
+    transcripts, notes and study sessions are stored on the device,
+    encrypted, and are not uploaded to us. We do not have a copy. We cannot
+    read them.
   </p>
   <p>
-    We use no analytics, no advertising, and no tracking of any kind. No
-    account is required to use the app.
+    There is one exception, and it is yours to switch on: if you turn on
+    <strong>Use online AI</strong> in Settings and add your own API key,
+    what you type in Chat is sent to that service. Nothing else is, and it
+    is off unless you choose it.
+  </p>
+  <p>
+    We use no analytics, no advertising and no tracking of any kind. No
+    account is required.
   </p>
 
   <h2>What stays on your device</h2>
-  <p>All of the following is stored only on your phone, encrypted at rest
-    with AES-256-GCM:</p>
+  <p>
+    All of the following is stored only on your phone, encrypted at rest
+    with AES-256-GCM:
+  </p>
   <ul>
     <li>Chats you have with the on-device AI</li>
     <li>Recordings you make, including the audio files themselves</li>
-    <li>Study material you paste in, and the practice questions generated from it</li>
-    <li>Budget entries you add</li>
+    <li>Transcripts, summaries, action items, decisions and open questions</li>
+    <li>Notes you write</li>
+    <li>Study sessions, including topics and your self-assessments</li>
   </ul>
   <p>
-    Deleting the app removes this data from your device. Because we never
-    receive a copy, we cannot restore it for you, and we cannot delete it
-    on your behalf — you are the only one who has it.
+    Deleting the app removes this data from your device. You can also delete
+    any individual chat, recording, note or study session from within the
+    app. Because we never receive a copy, we cannot restore anything for you
+    and we cannot delete it on your behalf — you are the only one who has
+    it.
   </p>
 
   <h2>When the app uses the internet</h2>
+  <p>OwnlyAI works offline. These are the only cases where it makes a
+    network request:</p>
+
+  <h3>Downloading the AI models</h3>
   <p>
-    OwnlyAI works offline. There are only two cases where it makes a
-    network request, and neither sends your content:
+    The first time you use Chat or Study, the app downloads a language model
+    (about 586&nbsp;MB) from Hugging Face. The first time you transcribe a
+    recording, it downloads a speech model (about 148&nbsp;MB) from Hugging
+    Face. Both are plain file downloads. Your content is never sent, and
+    both models run entirely on your phone afterwards — including in
+    aeroplane mode.
+  </p>
+
+  <h3>Online AI, only if you turn it on</h3>
+  <p>
+    Settings has a switch called <em>Use online AI when it is available</em>.
+    It is off by default. Turning it on shows a dialog explaining what
+    happens, and requires you to add your own free API key from Google AI
+    Studio or Groq.
   </p>
   <ul>
-    <li>
-      <strong>Downloading the AI model.</strong> The first time you use
-      Chat or Study, the app downloads a language model file (about
-      586&nbsp;MB) from Hugging Face, a third-party model host. This is a
-      plain file download. Your prompts are never sent — the model runs on
-      your phone afterwards, including in aeroplane mode.
-    </li>
-    <li>
-      <strong>Reporting a crash, only if you choose to.</strong> If the app
-      crashes, it can open your own email app with a pre-filled report
-      containing the error, your app version and your device model. Nothing
-      is sent automatically — you see the message and decide whether to
-      send it.
-    </li>
+    <li>What you type in <strong>Chat</strong> is sent to Google AI, or to
+      Groq if Google is unavailable, using your key.</li>
+    <li>The request goes from your phone directly to that service. It does
+      not pass through any OwnlyAI server.</li>
+    <li>Because the key is yours, your use of that service is governed by
+      <strong>their</strong> terms and privacy policy, and their free-tier
+      limits apply to your account.</li>
+    <li>Your recordings, transcripts, notes and study sessions are
+      <strong>never</strong> sent, whatever this setting says.</li>
+    <li>Every answer in the app says which service produced it.</li>
+    <li>You can switch it off, or remove your key, at any time.</li>
   </ul>
+
+  <h3>Reporting a crash or contacting support, only if you choose to</h3>
+  <p>
+    The app can open your own email app with a pre-filled message containing
+    the error, the app version and your device model. Nothing is sent
+    automatically — you see the message and decide whether to send it.
+  </p>
 
   <h2>What we collect</h2>
   <p>
@@ -79,16 +111,36 @@
     app.
   </p>
   <p>
-    If you contact support by email, we receive what you write in that
-    message and your email address, and we use it only to reply to you.
+    If you email support, we receive what you write and your email address,
+    and use it only to reply. We keep support emails for up to 12 months and
+    then delete them. To have yours deleted sooner, ask at the address
+    below.
+  </p>
+
+  <h2>API keys you add</h2>
+  <p>
+    If you add a Google AI or Groq key, it is stored in your device's
+    keychain. It is never uploaded to us, never included in any report, and
+    is sent only to the service it belongs to. Removing it in Settings
+    removes it from the device.
   </p>
 
   <h2>Recording other people</h2>
   <p>
     OwnlyAI can record audio. Laws about recording conversations differ by
-    country and, in the United States, by state — some require the consent
-    of everyone being recorded. You are responsible for complying with the
-    law where you are. Please tell people when you are recording them.
+    country and, in the United States, by state — several require the
+    consent of everyone being recorded. You are responsible for complying
+    with the law where you are. The app asks you to confirm that you have
+    informed participants before it will record a meeting or a lecture.
+    Please tell people when you are recording them.
+  </p>
+
+  <h2>AI-generated content</h2>
+  <p>
+    Summaries, action items, transcripts and answers are produced by AI
+    models and can be wrong, incomplete or misleading. Check anything
+    important against the original recording or source. Do not rely on them
+    for medical, legal, financial or other professional decisions.
   </p>
 
   <h2>Children</h2>
@@ -98,12 +150,21 @@
     them.
   </p>
 
-  <h2>Your choices</h2>
+  <h2>Your choices and rights</h2>
   <ul>
     <li>Use the app without an account — no sign-in is required.</li>
-    <li>Delete any chat, recording or note from within the app.</li>
+    <li>Keep everything on this phone by leaving <em>Use online AI</em>
+      off.</li>
+    <li>Delete any chat, recording, note or study session from within the
+      app.</li>
     <li>Delete everything by removing the app.</li>
+    <li>Ask us to delete support emails you have sent.</li>
   </ul>
+  <p>
+    Depending on where you live, you may have rights to access, correct or
+    delete personal data we hold. The only personal data we hold is what you
+    send us by email.
+  </p>
 
   <h2>Changes to this policy</h2>
   <p>
